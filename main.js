@@ -27,6 +27,7 @@ function cargar(){
     let textos=document.createElement("div");
     textos.id="textos";
 
+
     let labeldni=document.createElement("label");
     labeldni.textContent="DNI ALUMNO"
     let inputdni = document.createElement("input");
@@ -193,6 +194,10 @@ function cargar(){
     radios.appendChild(gruporadio1);
     radios.appendChild(gruporadio2);
 
+
+    let divbloquegustos=document.createElement("div");
+    divbloquegustos.id="divbloquegustos";
+
     let divhobbies=document.createElement("div");
     divhobbies.id="divhobbies";
 
@@ -200,12 +205,29 @@ function cargar(){
     let labelhobbies= document.createElement("label");
     labelhobbies.textContent="Selecciona tus hobbies"
 
+    let divh1=document.createElement("div");
     let labelh1= document.createElement("label");
     labelh1.textContent="Deportes";
 
     let inputh1= document.createElement("input");
     inputh1.id="inputh1";
     inputh1.type="checkbox";
+
+    let img1=document.createElement("img");
+    img1.src="./img/deportes.png";
+    img1.alt="Aqui imagen 1";
+    img1.id="img1";
+    img1.height=30;
+    img1.width=30;
+   
+
+    divh1.appendChild(labelh1)
+    
+    divh1.appendChild(img1);
+    divh1.appendChild(inputh1);
+    
+    
+    let divh2=document.createElement("div");
 
     let labelh2= document.createElement("label");
     labelh2.textContent="Cine y Series";
@@ -214,73 +236,104 @@ function cargar(){
     inputh2.id="inputh2";
     inputh2.type="checkbox";
 
+    let img2=document.createElement("img");
+    img2.src="./img/cine.jpg";
+    img2.alt="Aqui imagen 2";
+    img2.id="img2";
+    img2.height=30;
+    img2.width=30;
+   
+
+
+    divh2.appendChild(labelh2)
+    divh2.appendChild(img2);
+    divh2.appendChild(inputh2);
+
+
+    let divh3=document.createElement("div");
+
     let labelh3= document.createElement("label");
-    labelh3.textContent="Deportes";
+    labelh3.textContent="Lectura";
 
     let inputh3= document.createElement("input");
     inputh3.id="inputh3";
     inputh3.type="checkbox";
 
+    let img3=document.createElement("img");
+    img3.src="./img/libros.jpg";
+    img3.alt="Aqui imagen 3";
+    img3.id="img3";
+    img3.height=30;
+    img3.width=30;
+
+    divh3.appendChild(labelh3);
+    divh3.appendChild(img3);
+    divh3.appendChild(inputh3);
+
+    let divh4=document.createElement("div");
+
     let labelh4= document.createElement("label");
-    labelh4.textContent="Deportes";
+    labelh4.textContent="Viajes";
 
     let inputh4= document.createElement("input");
     inputh4.id="inputh4";
     inputh4.type="checkbox";
 
+    let img4=document.createElement("img");
+    img4.src="./img/viaje.png";
+    img4.alt="Aqui imagen 2";
+    img4.id="img2";
+    img4.height=30;
+    img4.width=30;
+
+    divh4.appendChild(labelh4);
+    divh4.appendChild(img4);
+    divh4.appendChild(inputh4);
+
+    let divh5=document.createElement("div");
+
     let labelh5= document.createElement("label");
-    labelh5.textContent="Deportes";
+    labelh5.textContent="Naturaleza";
 
     let inputh5= document.createElement("input");
     inputh5.id="inputh1";
     inputh5.type="checkbox";
 
+    let img5=document.createElement("img");
+    img5.src="./img/naturaleza.png";
+    img5.alt="Aqui imagen 2";
+    img5.id="img2";
+    img5.height=30;
+    img5.width=30;
+
+    divh5.appendChild(labelh5);
+    divh5.appendChild(img5);
+    divh5.appendChild(inputh5);
+
+
     divhobbies.appendChild(labelhobbies);
-    divhobbies.appendChild(labelh1);
-    divhobbies.appendChild(inputh1);
-    divhobbies.appendChild(labelh2);
-    divhobbies.appendChild(inputh2);
-    divhobbies.appendChild(labelh3);
-    divhobbies.appendChild(inputh3);
-    divhobbies.appendChild(labelh4);
-    divhobbies.appendChild(inputh4);
-    divhobbies.appendChild(labelh5);
-    divhobbies.appendChild(inputh5);
+    divhobbies.appendChild(divh1);
+    divhobbies.appendChild(divh2);
+    divhobbies.appendChild(divh3);
+    divhobbies.appendChild(divh4);
+    divhobbies.appendChild(divh5);
 
 
 
-    let imagen1=document.createElement("div")
-    imagen1.id="imagen1";
-
-    let img1=document.createElement("img");
-    img1.src="/img/dibujo1.png";
-    img1.alt="Aqui imagen 1";
-    img1.id="img1";
-    img1.height=100;
-    img1.width=200;
-    imagen1.appendChild(img1);
-
-
-    let imagen2=document.createElement("div")
-    imagen2.id="imagen2";
-
-    let img2=document.createElement("img");
-    img2.src="/img/dibujo2.jpg";
-    img2.alt="Aqui imagen 2";
-    img2.id="img2";
-    img2.height=100;
-    img2.width=200;
-
-    imagen1.appendChild(img1);
-    imagen2.appendChild(img2);
-
+   
+    
+    
+    
 
     let divselect=document.createElement("div");
     divselect.id="divselect";
 
+    let labelselect=document.createElement("label");
+    labelselect.textContent="¿Cual es tu asignatura favorita?"
+
     let select=document.createElement("select");
     select.id="select";
-    select.textContent="Elige tu asignatura favorita de este trimestre"
+    
     
     let option1=document.createElement("option");
     option1.value="DWEC";
@@ -298,39 +351,42 @@ function cargar(){
     option5.value="Ninguna"
     option5.textContent="Ninguna";
 
-
+    
     select.appendChild(option1);
     select.appendChild(option2);
     select.appendChild(option3);
     select.appendChild(option4);
     select.appendChild(option5);
-
+    divselect.appendChild(labelselect)
     divselect.appendChild(select);
+
+
 
 
     let textareadiv=document.createElement("div");
     textareadiv.id="textareadiv";
+
+    let labeltextarea=document.createElement("label");
+    labeltextarea.textContent="Describe tus condiciones en 5 lineas"
 
     let textarea=document.createElement("textarea");
     textarea.id="textarea";
     textarea.cols=100;
     textarea.rows=5;
 
-
+    textareadiv.appendChild(labeltextarea);
     textareadiv.appendChild(textarea);
 
-
+    divbloquegustos.appendChild(divhobbies)
+    divbloquegustos.appendChild(divselect);
+   
 
 
 
     fieldset.appendChild(legend);
     fieldset.appendChild(textos);
     fieldset.appendChild(radios);
-    
-    fieldset.appendChild(divhobbies);
-    fieldset.appendChild(imagen1);
-    fieldset.appendChild(imagen2);
-    fieldset.appendChild(divselect);
+    fieldset.appendChild(divbloquegustos)
     fieldset.appendChild(textareadiv);
     formulario.appendChild(fieldset);
 

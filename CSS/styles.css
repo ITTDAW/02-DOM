@@ -1,28 +1,40 @@
 
 
 body{
-    margin: auto;
-    width:80%;
-    font-size: 20px;
    
+    margin: auto;
+  
+    font-size: 20px;
+    background-image: url("../img/fondo.jpg") ;
+    
+   color: white;
 }
 
 .contenedor{
+    display: flex;
+    justify-content: center;
+}
 
+#divformulario{
+    margin-top: 40px;
+}
+
+form fieldset legend{
+    font-size: 30px;
     text-align: center;
 }
 
-
-#formulario{
-    text-align: center;
-}
-#formulario fieldset{
-    width: 60%;
-}
 
 #textos{
+    margin-left: 300px;
     display: flex;
+    justify-content:right;
     flex-direction: column;
+    margin-bottom: 40px;
+}
+
+#textos input{
+    width: 50%;
 }
 
 #gruporadio1{
@@ -34,4 +46,34 @@ body{
     margin: 10px;
     display: grid;
     grid-template-columns: auto auto ;
+}
+#divbloquegustos{
+
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    
+}
+
+#divselect{
+    margin-top: 60px;
+    
+}
+
+#divselect label{
+    margin-right: 10px;
+}
+#divhobbies label {
+    margin-right: 10px;
+}
+#divhobbies input{
+    margin-left: 20px;
+}
+
+#textareadiv{
+    margin-top: 20px;
+    display: flex;
+    justify-content:right;
+    flex-direction: column;
+
 }
