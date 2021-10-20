@@ -1,4 +1,6 @@
 
+/*Esta será nuestra hoja de estilos para nuestra pagina web, todos los elementos los hemos definido con su correspondiente id
+en nuestro documento Javascript, asi que los llamaremos a casi todos con el signo # menos el contenedor que esta definido como clase*/
 
 body{
    
@@ -11,12 +13,24 @@ body{
 }
 
 .contenedor{
-    display: flex;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
+
+#divheader{
+    width: 100%;
+    height: 80px;
+    background-image: url("../img/header.png") ;
+
+}
+
+
 
 #divformulario{
     margin-top: 40px;
+    width: 60%;
 }
 
 form fieldset legend{
@@ -24,9 +38,13 @@ form fieldset legend{
     text-align: center;
 }
 
-
+#cabecera{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
 #textos{
-    margin-left: 300px;
+    
     display: flex;
     justify-content:right;
     flex-direction: column;
@@ -34,31 +52,59 @@ form fieldset legend{
 }
 
 #textos input{
-    width: 50%;
+    width: 100%;
 }
 
-#gruporadio1{
-    display: inline;
-    flex-direction: column;
+#fotoestudiante{
+    margin-top: 20px;
+   padding-left: 300px;
+    
 }
 
 #radios{
     margin: 10px;
     display: grid;
     grid-template-columns: auto auto ;
+    text-align: center;
+    
 }
+
+#gruporadio1{
+    display: inline;
+    flex-direction: column;
+    border: wheat solid 2px;
+}
+
+#gruporadio2{
+    margin-left: 10px;
+    border: wheat solid 2px;
+}
+
+
 #divbloquegustos{
 
     margin-top: 40px;
     display: grid;
     grid-template-columns: auto auto ;
+    text-align: center;
+    
     
 }
 
+#divhobbies{
+    border: wheat solid 2px;
+}
+
 #divselect{
-    margin-top: 60px;
+    margin-left: 10px;
+    border: wheat solid 2px;
+
     
 }
+#divselect select{
+    margin-top: 60px;
+}
+
 
 #divselect label{
     margin-right: 10px;
@@ -75,5 +121,31 @@ form fieldset legend{
     display: flex;
     justify-content:right;
     flex-direction: column;
+    align-items: center;
+
+}
+
+#textareadiv label{
+    text-align: center;
+    
+}
+
+#boton{
+    margin-top: 20px;
+    width: 20%;
+    height: 30px;
+    text-align: center;
+    background: rgb(17, 28, 48);
+    color: white;
+}
+
+#divfooter{
+
+    margin-top: 40px;
+    width: 90%;
+    height: 350px;
+
+    background-image: url("../img/footer.png")  ;
+    
 
 }
