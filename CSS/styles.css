@@ -4,46 +4,37 @@ en nuestro documento Javascript, asi que los llamaremos a casi todos con el sign
 
 body{
    
-    margin: auto;
+    margin: 0;
     color: white;
   
     font-size: 20px;
     background-image: url("../img/fondo.jpg") ;
     /* centro imagen le damos todo el ancho y alto del contenedor*/
-    background-position: center center;
-	background-size: cover;
 	background-repeat: no-repeat;
-    background-attachment: fixed;  
-}
-/*añado pseudoelemento para añadir capa opacity y que sea mejor la visibilidad*/
-body::before {
-    content:'';
-	position: absolute;
-    top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.3);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .contenedor{
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-content: center;
+   
 }
 
 #divheader{
     width: 100%;
     height: 80px;
     background-image: url("../img/header.png") ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
 }
 
 
 
 #divformulario{
-    margin-top: 40px;
+    margin: 40px auto;
     width: 60%;
 }
 
@@ -158,9 +149,12 @@ form fieldset legend{
 
     margin-top: 40px;
     width: 100%;
-    height: 350px;
+    height: 250px;
 
     background-image: url("../img/footer.png")  ;
+    /*atributos para imagen*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     
 
 }
