@@ -13,6 +13,8 @@ body{
 	background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+
 }
 
 .contenedor{
@@ -78,11 +80,14 @@ form fieldset legend{
     display: inline;
     flex-direction: column;
     border: wheat solid 2px;
+    background-color: rgba(230, 239, 243, 0.3) ;
+    
 }
 
 #gruporadio2{
     margin-left: 10px;
     border: wheat solid 2px;
+    background-color: rgba(230, 239, 243, 0.3) ;
 }
 
 
@@ -98,11 +103,14 @@ form fieldset legend{
 
 #divhobbies{
     border: wheat solid 2px;
+    background-color: rgba(230, 239, 243, 0.3) ;
 }
 
 #divselect{
     margin-left: 10px;
     border: wheat solid 2px;
+    background-color: rgba(230, 239, 243, 0.3) ;
+    
 
     
 }
@@ -113,9 +121,11 @@ form fieldset legend{
 
 #divselect label{
     margin-right: 10px;
+    
 }
 #divhobbies label {
     margin-right: 10px;
+   
 }
 #divhobbies input{
     margin-left: 20px;
@@ -143,7 +153,11 @@ form fieldset legend{
     text-align: center;
     background: rgb(28, 170, 127);
     color: white;
+    
+    
 }
+
+
 
 #divfooter{
 
